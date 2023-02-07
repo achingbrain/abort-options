@@ -14,6 +14,7 @@
  * // later
  *
  * controller.abort()
+ * ```
  */
 export interface AbortOptions {
   signal?: AbortSignal
