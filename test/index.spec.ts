@@ -1,16 +1,15 @@
 /* eslint-env mocha */
 
 import { expect } from 'aegir/chai'
-import { CustomProgressEvent } from '../src/index.js'
+import type { AbortOptions } from '../src/index.js'
 
-describe('progress', () => {
+describe('abort options', () => {
   it('should have type and detail properties', async () => {
-    const type = 'event-type'
-    const detail = 'event-detail'
+    const controller = new AbortController()
+    const options: AbortOptions = {
+      signal: controller.signal
+    }
 
-    const event = new CustomProgressEvent<number>(type, detail)
-
-    expect(event).to.have.property('type', type)
-    expect(event).to.have.property('detail', detail)
+    expect(options).to.have.property('signal')
   })
 })

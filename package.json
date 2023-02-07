@@ -16,13 +16,25 @@
     "node": ">=16.0.0",
     "npm": ">=7.0.0"
   },
-  "main": "src/index.js",
+  "type": "module",
+  "types": "./dist/src/index.d.ts",
   "files": [
     "src",
-    "dist"
+    "dist",
+    "!dist/test",
+    "!**/*.tsbuildinfo"
   ],
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/src/index.js"
+    }
+  },
   "eslintConfig": {
-    "extends": "ipfs"
+    "extends": "ipfs",
+    "parserOptions": {
+      "sourceType": "module"
+    }
   },
   "release": {
     "branches": [
