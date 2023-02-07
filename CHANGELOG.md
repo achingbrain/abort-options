@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/achingbrain/abort-options/compare/v1.0.0...v1.0.1) (2023-02-07)
+
+
+### Documentation
+
+* update example jsdoc ([3de30c2](https://github.com/achingbrain/abort-options/commit/3de30c28427e9dd620aa0dafbaa0f96dfc14d505))
+
 ## 1.0.0 (2023-02-07)
 
 
