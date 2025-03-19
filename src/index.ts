@@ -1,6 +1,7 @@
 /**
- * An object that contains an AbortSignal as
- * the optional `signal` property.
+ * @packageDocumentation
+ *
+ * An object that contains an AbortSignal as the optional `signal` property.
  *
  * @example
  *

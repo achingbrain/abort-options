@@ -12,9 +12,9 @@
   "bugs": {
     "url": "https://github.com/achingbrain/abort-options/issues"
   },
-  "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=7.0.0"
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   },
   "type": "module",
   "types": "./dist/src/index.d.ts",
@@ -33,6 +33,7 @@
   "eslintConfig": {
     "extends": "ipfs",
     "parserOptions": {
+      "project": true,
       "sourceType": "module"
     }
   },
@@ -133,10 +134,11 @@
     "test:firefox": "aegir test -t browser -- --browser firefox",
     "test:firefox-webworker": "aegir test -t webworker -- --browser firefox",
     "dep-check": "aegir dep-check",
+    "spell-check": "aegir spell-check",
     "release": "aegir release",
     "docs": "aegir docs"
   },
   "devDependencies": {
-    "aegir": "^38.1.2"
+    "aegir": "^45.1.4"
   }
 }
