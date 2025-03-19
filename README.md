@@ -5,6 +5,39 @@
 
 > An interface with an optional AbortSignal
 
+# About
+
+<!--
+
+!IMPORTANT!
+
+Everything in this README between "# About" and "# Install" is automatically
+generated and will be overwritten the next time the doc generator is run.
+
+To make changes to this section, please update the @packageDocumentation section
+of src/index.js or src/index.ts
+
+To experiment with formatting, please run "npm run docs" from the root of this
+repo and examine the changes made.
+
+-->
+
+An object that contains an AbortSignal as the optional `signal` property.
+
+## Example
+
+```js
+const controller = new AbortController()
+
+aLongRunningOperation({
+  signal: controller.signal
+})
+
+// later
+
+controller.abort()
+```
+
 # Install
 
 ```console
@@ -18,14 +51,6 @@ Loading this module through a script tag will make its exports available as `Abo
 ```html
 <script src="https://unpkg.com/abort-options/dist/index.min.js"></script>
 ```
-
-## Table of contents <!-- omit in toc -->
-
-- [Install](#install)
-  - [Browser `<script>` tag](#browser-script-tag)
-- [API Docs](#api-docs)
-- [License](#license)
-- [Contribution](#contribution)
 
 # API Docs
 
