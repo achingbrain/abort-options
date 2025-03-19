@@ -1,6 +1,6 @@
 {
   "name": "abort-options",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An interface with an optional AbortSignal",
   "author": "",
   "license": "Apache-2.0 OR MIT",
